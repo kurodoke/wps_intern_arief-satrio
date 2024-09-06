@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VerificationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home.index');
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/login', [VerificationController::class, 'index'])->name('login.index');
+Route::post('/login', [VerificationController::class, 'login'])->name('login');
+Route::post('/logout', [VerificationController::class, 'logout'])->name('logout');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 });

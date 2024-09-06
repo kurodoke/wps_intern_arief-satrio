@@ -1,6 +1,6 @@
-@extends('layouts.home')
+@extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Dashboard')
 
 @section('content')
     <section class="bg-white dark:bg-gray-900">

@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('subordinates', function (Blueprint $table) {
             $table->unsignedBigInteger('upper');
             $table->unsignedBigInteger('lower');
-            $table->foreign('upper')->references('id')->on('employees');
-            $table->foreign('lower')->references('id')->on('employees');
+            $table->foreign('upper')->references('id')->on('users');
+            $table->foreign('lower')->references('id')->on('users');
             $table->timestamps();
             $table->primary(['upper', 'lower']);
         });
