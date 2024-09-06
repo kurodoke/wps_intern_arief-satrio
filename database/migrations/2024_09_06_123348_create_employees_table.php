@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->string("name", 255);
-            $table->enum("role", ["Direktur", "Manager Operasional", "Staf"]);
+            $table->enum("role", ["Direktur", "Manager Operasional", "Manager Keuangan", "Staf"]);
             $table->timestamps();
         });
     }

@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('logs', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('employee_id');
+            $table->foreign("employee_id")->references('id')->on('employees');
+            $table->text('description');
+            $table->enum("status", ["Pending", "Disetujui", "Ditolak"]);
             $table->timestamps();
         });
     }
