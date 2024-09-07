@@ -5,7 +5,8 @@
 @section('content')
     <section class="bg-gray-50 rounded-lg dark:bg-gray-900">
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-            <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+            <a href={{ route('home.index') }}
+                class="flex gap-1 items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
                 <div class="w-[42px] h-[42px] md:w-[64px] md:h-[64px]">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                         id="Capa_1" viewBox="-50.49 -50.49 605.88 605.88" xml:space="preserve" fill="#000000"

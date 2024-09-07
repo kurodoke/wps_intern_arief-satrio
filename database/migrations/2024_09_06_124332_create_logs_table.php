@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('logs', function (Blueprint $table) {
+        Schema::create('daily_logs', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->foreign("user_id")->references('id')->on('users');
             $table->text('description');
-            $table->enum("status", ["Pending", "Disetujui", "Ditolak"]);
+            $table->string('filepath')->nullable();
+            $table->enum("status", ["Pending", "Disetujui", "Ditolak"])->default("Pending");
             $table->timestamps();
         });
     }

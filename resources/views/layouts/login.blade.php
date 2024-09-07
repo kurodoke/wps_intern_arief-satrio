@@ -8,7 +8,7 @@
     <title>@yield('title', 'WPS')</title>
 </head>
 
-<body>
+<body class="bg-gray-50">
     <!-- Body Content -->
     <div class="container m-auto  max-w-screen-xl">
         @yield('content')

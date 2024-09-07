@@ -8,92 +8,114 @@
     <title>@yield('title', 'WPS')</title>
 </head>
 
-<body>
-    <!-- Header -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="flex items-center space-x-2 rtl:space-x-reverse">
-                <div class="w-[42px] h-[42px] md:w-[64px] md:h-[64px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                        id="Capa_1" viewBox="-50.49 -50.49 605.88 605.88" xml:space="preserve" fill="#000000"
-                        stroke="#000000" stroke-width="0.00504895">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
-                            <rect x="-50.49" y="-50.49" width="605.88" height="605.88" rx="302.94" fill="#c8e7f4"
-                                strokewidth="0"></rect>
-                        </g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                            stroke-width="15.146849999999997"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <g>
-                                <path style="fill:#ffffff;"
-                                    d="M392.139,169.814H287.295l-30.847-45.246h-33.27l0.103,45.246H112.756 C54.624,169.814,7.5,216.938,7.5,275.07c0,58.131,47.124,105.256,105.256,105.256h279.383c58.132,0,105.256-47.125,105.256-105.256 C497.395,216.938,450.271,169.814,392.139,169.814z">
-                                </path>
-                                <circle style="fill:#7e7b63;" cx="112.756" cy="275.07" r="105.256"></circle>
-                                <path style="fill:#0F2639;"
-                                    d="M392.139,162.314h-100.88l-30.847-45.246h-44.75l0.103,45.246H112.756 C50.582,162.314,0,212.897,0,275.07s50.582,112.756,112.756,112.756h279.383c62.174,0,112.756-50.582,112.756-112.756 S454.313,162.314,392.139,162.314z M15,275.07c0-53.903,43.853-97.756,97.756-97.756c53.902,0,97.755,43.853,97.755,97.756 c0,53.903-43.853,97.756-97.755,97.756C58.853,372.826,15,328.973,15,275.07z M392.139,372.826H168.903 c9.713-5.601,18.514-12.612,26.131-20.745h113.134v-15H206.879c11.768-17.803,18.632-39.119,18.632-62.011 c0-7.313-0.708-14.461-2.044-21.39h108.346v-15H219.484c-2.588-7.569-5.962-14.777-10.021-21.528h200.148v-15H198.686 c-8.404-9.889-18.475-18.318-29.782-24.838h61.895l-0.103-45.246h21.789l30.847,45.246h108.808 c53.903,0,97.756,43.853,97.756,97.756C489.895,328.973,446.042,372.826,392.139,372.826z">
-                                </path>
-                                <path style="fill:#0F2639;"
-                                    d="M147.473,345.395l-6.659-13.441c-8.772,4.346-18.212,6.55-28.058,6.55 c-34.978,0-63.434-28.456-63.434-63.433c0-34.978,28.456-63.434,63.434-63.434c34.977,0,63.433,28.456,63.433,63.434 c0.001,16.417-6.276,32.001-17.673,43.881l10.824,10.385c14.09-14.686,21.849-33.958,21.849-54.266 c0-43.249-35.185-78.434-78.433-78.434c-43.248,0-78.434,35.185-78.434,78.434c0,43.248,35.185,78.433,78.434,78.433 C124.932,353.503,136.612,350.775,147.473,345.395z">
-                                </path>
-                                <path style="fill:#0F2639;"
-                                    d="M68.645,275.07c0,24.323,19.788,44.11,44.111,44.11c24.323,0,44.11-19.788,44.11-44.11 c0-24.323-19.788-44.111-44.11-44.111C88.433,230.959,68.645,250.747,68.645,275.07z M141.866,275.07 c0,16.051-13.059,29.11-29.11,29.11c-16.052,0-29.111-13.059-29.111-29.11c0-16.052,13.059-29.111,29.111-29.111 C128.807,245.959,141.866,259.018,141.866,275.07z">
-                                </path>
-                                <rect x="354.697" y="238.681" style="fill:#0F2639;" width="105.826" height="15">
-                                </rect>
-                                <path style="fill:#0F2639;"
-                                    d="M368.614,302.482c-16.644,0-30.185,13.541-30.185,30.186h15c0-8.374,6.812-15.186,15.185-15.186 c8.373,0,15.185,6.812,15.185,15.186h15C398.799,316.022,385.258,302.482,368.614,302.482z">
-                                </path>
-                                <path style="fill:#0F2639;"
-                                    d="M368.614,272.73c-16.357,0-31.903,6.662-43.186,18.394h-86v15h92.774l2.246-2.627 c8.564-10.02,21.018-15.767,34.166-15.767c13.148,0,25.602,5.747,34.165,15.767l2.245,2.627h55.498v-15H411.8 C400.518,279.392,384.971,272.73,368.614,272.73z">
-                                </path>
+<body class="bg-gray-50">
+    <!-- sidebar -->
+
+    <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar"
+        type="button"
+        class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+            </path>
+        </svg>
+    </button>
+
+    <aside id="default-sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 font-medium"
+        aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-white dark:bg-gray-800">
+            <form action={{ route('logout') }} method="POST">
+                @csrf
+                <div
+                    class="flex flex-col gap-2 justify-center items-center p-2 text-gray-900 rounded-lg dark:text-white group">
+                    <div class="w-[100px] h-[100px]">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM15 9C15 10.6569 13.6569 12 12 12C10.3431 12 9 10.6569 9 9C9 7.34315 10.3431 6 12 6C13.6569 6 15 7.34315 15 9ZM12 20.5C13.784 20.5 15.4397 19.9504 16.8069 19.0112C17.4108 18.5964 17.6688 17.8062 17.3178 17.1632C16.59 15.8303 15.0902 15 11.9999 15C8.90969 15 7.40997 15.8302 6.68214 17.1632C6.33105 17.8062 6.5891 18.5963 7.19296 19.0111C8.56018 19.9503 10.2159 20.5 12 20.5Z"
+                                    fill="#292929"></path>
                             </g>
-                        </g>
-                    </svg>
+                        </svg>
+                    </div>
+                    <h1 class="font-bold text-black text-2xl text-center">{{ auth()->user()->name }}</h1>
+                    <h1 class="text-black text-md text-center">{{ auth()->user()->role }}</h1>
+                    <button type="submit"
+                        class="inline-flex w-full gap-1 justify-center items-center py-3 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100  focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-70">
+                        <div class="w-[1.2rem] h-[1.2rem]">
+                            <svg class="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M21 12L13 12" stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M18 15L20.913 12.087V12.087C20.961 12.039 20.961 11.961 20.913 11.913V11.913L18 9"
+                                        stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M16 5V4.5V4.5C16 3.67157 15.3284 3 14.5 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H14.5C15.3284 21 16 20.3284 16 19.5V19.5V19"
+                                        stroke="#323232" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        Logout
+                    </button>
                 </div>
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">WebLog</span>
-            </a>
-            <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            </form>
+            <hr class="mt-4 mb-4" />
+            <ul class="space-y-2 font-medium">
+                <li>
+                    <a href={{ route('dashboard.index') }}
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 22 21">
+                            <path
+                                d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
+                            <path
+                                d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
+                        </svg>
+                        <span class="ms-3">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href={{ route('dailylog.index') }}
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z" />
+                            <path
+                                d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z" />
+                            <path
+                                d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Kelola Log</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
 
-                    <li>
-                        <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                            Login
-                        </a>
-                    </li>
+    <div class="p-4 sm:ml-64 bg-gray-50">
+        <div class="p-4 flex flex-col gap-2 md:gap-4">
+            @yield('content')
+        </div>
 
-                </ul>
+        <footer class="dark:bg-gray-900 m-4">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <span
+                        class="hover:underline">Kurodoke™</span>. All Rights Reserved.</span>
             </div>
-        </div>
-    </nav>
-
-
-
-    <!-- Body Content -->
-    <div class="container m-auto p-4 max-w-screen-xl">
-        @yield('content')
+        </footer>
     </div>
-    <!-- Footer -->
-
-
-    <footer class="bg-white dark:bg-gray-900 m-4">
-        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <span
-                    class="hover:underline">Kurodoke™</span>. All Rights Reserved.</span>
-        </div>
-    </footer>
 
 
 
